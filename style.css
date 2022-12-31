@@ -2,4 +2,160 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: sans-serif;
+
+  --primary-light: rgb(247, 247, 247);
+  --secondary-light: rgb(255, 255, 255);
+  --primary-dark: rgb(44, 44, 44);
+  --secondary-dark: rgb(75, 75, 75);
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  width: 38vw;
+  height: 100vh;
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20vh;
+  height: 128px;
+
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+
+  font-size: 3em;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+  padding: 12px 0;
+}
+
+main {
+  width: 62vw;
+  background-color: var(--primary-light);
+}
+
+.pitch,
+.login,
+.submit-button {
+  margin-left: 32px;
+}
+
+.pitch {
+  margin-top: 20vh;
+  height: 128px;
+  width: 500px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: var(--primary-dark);
+}
+
+.pitch p {
+  margin-bottom: 24px;
+}
+
+.inputs {
+  padding-left: 32px;
+  padding-bottom: 16px;
+  background-color: var(--secondary-light);
+  box-shadow: 1px 2px 6px rgb(158, 158, 158);
+}
+
+.input-group {
+  display: inline-block;
+}
+
+legend {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--secondary-dark);
+}
+
+input {
+  appearance: none;
+
+  margin-bottom: 16px;
+  margin-right: 48px;
+
+  padding-left: 8px;
+
+  height: 28px;
+  width: 224px;
+
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+input:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #7096e4;
+  box-shadow: 1px 2px 6px rgb(136, 136, 136);
+}
+
+input:invalid {
+  outline: none;
+  border: 2px solid #e47070;
+}
+
+li {
+  list-style-type: none;
+}
+
+.submit-button {
+  margin-top: 24px;
+
+  height: 40px;
+  width: 180px;
+
+  background-color: #596d48;
+  color: var(--primary-light);
+
+  border: 0px;
+  border-radius: 6px;
+
+  box-shadow: 1px 2px 6px rgb(136, 136, 136);
+}
+
+.login {
+  margin-top: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #596d48;
+}
+
+a:visited {
+  color: #404e34;
 }
